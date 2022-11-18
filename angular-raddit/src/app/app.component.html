@@ -7,6 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+
 <form class="ui large form segment">
   <h3 class="ui header">Add a Link</h3>
 
@@ -22,7 +23,10 @@
   <!-- 버튼추가 -->
   <button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button">Submit link</button>
 </form>
-
+<!-- 컴포넌트 추가 -->
+<div class="ui grud posts">
+  <app-article></app-article>
+</div>
 
 
 <style>
