@@ -25,7 +25,7 @@
 </form>
 <!-- 컴포넌트 추가 -->
 <div class="ui grud posts">
-  <app-article *ngFor="let article of articles" [article]="article"></app-article>
+  <app-article *ngFor="let article of sortArticles()" [article]="article"></app-article>
 </div>
 
 

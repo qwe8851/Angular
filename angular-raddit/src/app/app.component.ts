@@ -7,7 +7,7 @@ import { Article } from './article/article.model';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  articles: Article[]; // <-- 컴포넌트 프로퍼티
+  articles: Article[];
 
   constructor() {
     this.articles = [
@@ -20,6 +20,13 @@ export class AppComponent {
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
     console.log(`Adding article title : ${title.value}, link : ${link.value}`);
 
+    this.articles.push(new Article(title.value, link.value, 0)); //제출된 제목과 URL로 새 Article 인스턴스 생성 → 이 인스턴스를 Article 배열에 추가
+    title.value = ''; //input필드의 값 지우기
+    link.value = '';
     return false;
+  }
+
+  sortArticles(): Article[] {
+    return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);
   }
 }

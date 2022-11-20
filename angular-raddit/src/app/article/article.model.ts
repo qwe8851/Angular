@@ -16,7 +16,7 @@ export class Article {
   }
 
   voteDown(): void {
-    this.votes += 1;
+    this.votes -= 1;
   }
 
   //   domain()은 URL에서 도메인을 추출해내는 유틸리티 함수임
@@ -24,6 +24,7 @@ export class Article {
     try {
       // ex: http://foo.com/path.bar
       const domainAndPath: string = this.link.split('//')[1];
+      // ex: foo.com/path.bar
       return domainAndPath.split('/')[0];
     } catch (err) {
       return null;
