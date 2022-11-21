@@ -62,6 +62,8 @@ ng serve --open으로 화면을 띄우려고 할 때 이런 오류가 발생하�
 
 <br><br><br>
 
-> - OS : window 11 <br>
+> - Angular CLI: 15.0.0<br>
+> - Node: 16.17.0<br>
+> - Package Manager: npm 8.15.0<br>
+> - OS: win32 x64<br>
 > - IDE : vscode <br>
-> - nodejs version : v16.17.0 <br>
