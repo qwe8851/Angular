@@ -28,6 +28,15 @@ ng new 프로젝트명
 ```
 ng generate component 컴포넌트명
 ```
+축약형 : `ng g c 컴포넌트명`
+
+<br>
+
+### 6. 모달 생성
+```
+ng generate module 모달명
+```
+
 <br>
 
 
