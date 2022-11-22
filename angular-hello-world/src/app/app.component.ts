@@ -12,7 +12,7 @@ export class AppComponent {
 
   constructor(public router: Router) {}
 
-  ngOnInit() {
-    this.router.navigate(['user-basic']);
+  ngOnInit() :void{
+    this.router.navigate(['user1']);
   }
 }

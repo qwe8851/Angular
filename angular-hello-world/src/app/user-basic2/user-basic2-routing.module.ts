@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserBasic2Component } from './user-basic2.component';
 
 const routes: Routes = [
-    {
-        path: '',
-        component: UserBasic2Component
-    }
+  {
+    path: '',
+    component: UserBasic2Component,
+  },
 ];
 
 @NgModule({

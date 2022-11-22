@@ -20,7 +20,8 @@ const routes: Routes = [
   //   pathMatch: 'full',
   // }
 
-  { //추가 - 없어도 동작하는데 어디서 리다이렉트가 되는건지?
+  {
+    //추가 - 없어도 동작하는데 어디서 리다이렉트가 되는건지?
     path: '',
     redirectTo: '/first',
     pathMatch: 'full',
@@ -30,7 +31,8 @@ const routes: Routes = [
     children: [
       {
         path: 'first',
-        component: FirstUserComponent,
+        component: FirstUserComponent, 
+        // loadChildren: ()=>import ('../app/first-user/first-user.module').then(module=>module.FirstUserModule)
       },
       {
         path: 'second',

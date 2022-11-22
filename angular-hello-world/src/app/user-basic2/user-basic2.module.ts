@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserBasic2Component } from './user-basic2.component';
-import { UserBasic2RoutingModule } from './user-basic2-routing.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -10,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    UserBasic2RoutingModule,
+    UserBasic2Module,
     FormsModule
   ]
 })
