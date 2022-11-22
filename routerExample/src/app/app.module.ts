@@ -15,7 +15,10 @@ const router: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [
+    AppComponent, 
+    LoginComponent
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(router, { enableTracing: false, useHash:true }),

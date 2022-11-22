@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-user-basic',
@@ -13,6 +13,8 @@ export class UserBasicComponent implements OnInit {
   ngOnInit(): void {}
 
   move() {
-    this.router.navigate(['user-basic2']);
+    console.log("router");
+    this.router.navigate(['app-user-basic2']);
+    // this.router.navigate(['board']);
   }
 }

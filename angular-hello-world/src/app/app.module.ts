@@ -1,9 +1,21 @@
-import { NgModule, OnInit } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { UserBasicModule } from './user-basic/user-basic.module';
+import { Router, RouterModule, Routes } from '@angular/router';
+import { UserBasicComponent } from './user-basic/user-basic.component';
+
+// import { RouterModule, Routes } from '@angular/router'; //라우터
+
+const router: Routes = [
+  {
+    path: '',
+    redirectTo: '/user-basic',
+    pathMatch: 'full'
+  },
+];
 
 @NgModule({
   declarations: [
@@ -16,8 +28,9 @@ import { UserBasicModule } from './user-basic/user-basic.module';
     AppRoutingModule,
     UserBasicModule,
     // UserBasic2Module
+    RouterModule.forRoot(router, { enableTracing: false, useHash: true }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppRoutingModule],
 })
-export class AppModule{}
+export class AppModule {}
