@@ -9,6 +9,6 @@ import { UserBasicModule } from './user-basic/user-basic.module';
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, UserBasicModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent], //AppRoutingModule 변경
 })
 export class AppModule {}
