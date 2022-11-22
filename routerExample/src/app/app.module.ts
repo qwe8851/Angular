@@ -2,11 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router'; //라우터
 import { LoginComponent } from './login/login.component';
 import { BoardComponent } from './board/board.component';
-
-import { RouterModule, Routes } from '@angular/router'; //라우터
-
 const router: Routes = [
   //라우팅
   { path: 'login', component: LoginComponent },
@@ -15,13 +13,10 @@ const router: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent, 
-    LoginComponent
-  ],
+  declarations: [AppComponent, LoginComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(router, { enableTracing: false, useHash:true }),
+    RouterModule.forRoot(router, { enableTracing: false, useHash: true }),
   ],
   providers: [],
   bootstrap: [AppComponent],

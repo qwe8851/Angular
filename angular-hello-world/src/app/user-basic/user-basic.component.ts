@@ -13,7 +13,6 @@ export class UserBasicComponent implements OnInit {
   ngOnInit(): void {}
 
   move() {
-    console.log("router");
     this.router.navigate(['app-user-basic2']);
     // this.router.navigate(['board']);
   }
