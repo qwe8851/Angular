@@ -1,5 +1,5 @@
 /**
- * `Product` 객체 제공 
+ * Provides a `Product` object
  */
 export class Product {
   constructor(
@@ -8,6 +8,5 @@ export class Product {
     public imageUrl: string,
     public department: string[],
     public price: number) {
-      
   }
 }

@@ -7,6 +7,7 @@ import { Article } from './article/article.model';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  
   articles: Article[];
 
   constructor() {
