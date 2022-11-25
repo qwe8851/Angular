@@ -18,6 +18,6 @@ export class DemoFormWithBuilderComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(value: string): void {
-    console.log('wb-your submitted value: ', value);
+    console.log('b-your submitted value: ', value);
   }
 }
