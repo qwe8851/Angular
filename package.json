@@ -3,6 +3,7 @@
     "@angular/animations": "^15.0.0",
     "@angular/cdk": "^15.0.0",
     "@angular/material": "^15.0.0",
+    "bootstrap": "^3.4.1",
     "package-lock.json": "^1.0.0",
     "package.json": "^2.0.1"
   }
