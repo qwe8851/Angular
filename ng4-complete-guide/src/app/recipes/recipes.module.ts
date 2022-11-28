@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RecipesListComponent } from './recipes-list/recipes-list.component';
-import { RecipesDetailComponent } from './recipe-detail/recipes-detail.component';
-import { RecipesItemComponent } from './recipes-list/recipes-item/recipes-item.component';
+export class Recipe {
+  public name: string;
+  public description: string;
+  public imagePath: string;
 
-
-
-@NgModule({
-  declarations: [
-    RecipesListComponent,
-    RecipesDetailComponent,
-    RecipesItemComponent
-  ],
-  imports: [
-    CommonModule
-  ]
-})
-export class RecipesModule { }
+  constructor(name: string, desc: string, imgPath: string) {
+    this.name = name;
+    this.description = desc;
+    this.imagePath = imgPath;
+  }
+}
