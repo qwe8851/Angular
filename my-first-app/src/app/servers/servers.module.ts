@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ServersComponent } from './servers.component';
-import { FormsModule } from '@angular/forms';
-import { ServerComponent } from '../server/server.component';
+import { ServerModule } from '../server/server.module';
 
 @NgModule({
-  declarations: [ServersComponent,ServerComponent],
-  imports: [CommonModule, FormsModule],
+  declarations: [ServersComponent],
+  imports: [CommonModule, FormsModule, ServerModule],
   exports: [ServersComponent],
 })
 export class ServersModule {}
