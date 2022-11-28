@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // username:string;
   showSecret: boolean;
-  log: number[];
+  log: number[] | any;
 
   constructor() {
     // this.username= '';
