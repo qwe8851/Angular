@@ -6,10 +6,23 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  // 프로퍼티 정의
   @Input() serverElements = [
     { type: 'server', name: 'TestServer', content: 'Just a test!' },
   ];
+  oddNumbers: number[];
+  evenNumbers: number[];
 
+  constructor() {
+    // 프로퍼티 초기화
+    // this.serverElements = [
+    //   { type: 'server', name: 'TestServer', content: 'Just a test!' },
+    // ];
+    this.oddNumbers = [];
+    this.evenNumbers = [];
+  }
+
+  // 메소드 정의
   onServerAdded(serverData: { serverName: string; serverContent: string }) {
     this.serverElements.push({
       type: 'server',
@@ -29,9 +42,16 @@ export class AppComponent {
     });
   }
 
-  onChangeFirst(){
+  onChangeFirst() {
     this.serverElements[0].name = 'Changed!';
   }
 
-
+  intervalFired(firedNumber: number) {
+    // console.log(firedNumber);
+    if (firedNumber % 2 === 0) {
+      this.evenNumbers.push(firedNumber);
+    } else {
+      this.oddNumbers.push(firedNumber);
+    }
+  }
 }
