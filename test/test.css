@@ -1,0 +1,25 @@
+.wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.header{
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  background: #ddd;
+  cursor: default;
+}
+
+.header.active{
+	cursor: move;
+}

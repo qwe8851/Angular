@@ -12,6 +12,7 @@ export class AppComponent {
   ];
   oddNumbers: number[];
   evenNumbers: number[];
+  loadedFeature = 'recipe';
 
   constructor() {
     // 프로퍼티 초기화
@@ -53,5 +54,9 @@ export class AppComponent {
     } else {
       this.oddNumbers.push(firedNumber);
     }
+  }
+
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
   }
 }

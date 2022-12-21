@@ -16,11 +16,7 @@ import {
   styleUrls: ['./server-element.component.css'],
   encapsulation: ViewEncapsulation.Emulated, //None, ShadowDom
 })
-export class ServerElementComponent
-  implements
-    OnInit,
-    OnChanges
-{
+export class ServerElementComponent implements OnInit, OnChanges {
   @Input('srvElement') element: { type: string; name: string; content: string };
   @Input() name: string;
 
